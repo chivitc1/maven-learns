@@ -7,7 +7,8 @@ public class App {
     public static void main(String[] args) {
         Greeting greeting = new Greeting("Hello");
         HelloService service = new HelloService(greeting);
-        service.sayHello("Chinv");
+        String msg = service.sayHello("Chinv");
+        System.out.println(msg);
     }
 
 }

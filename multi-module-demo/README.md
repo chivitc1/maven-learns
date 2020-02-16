@@ -47,3 +47,12 @@ Add dependency hello-core to hello-service pom.xml dependencies:
 
  mvn verify
  
+ ## Run app
+
+mvn clean install
+
+cd hello-app
+
+mvn clean compile assembly:single
+
+ java -jar target/hello-app-1.0-SNAPSHOT-jar-with-dependencies.jar
